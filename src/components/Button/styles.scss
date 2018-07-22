@@ -1,0 +1,35 @@
+@import 'utils.scss';
+
+.button {
+    width: 1200px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #649946;
+    transition: all .2s ease-in;
+    @include flexcenter();
+    color: white;
+
+    @include media("<huge") {
+        width: 1024px;
+    }
+
+    @include media("<large") {
+        width: 768px;
+    }
+    @include media("<medium") {
+        width: 376px;
+    }
+
+    @include media('<small') {
+        width: 90%;
+    }
+
+    &:hover {
+        background-color: #93d36e;
+    }
+
+    &:active {
+        background-color: #649946;
+    }
+
+}
